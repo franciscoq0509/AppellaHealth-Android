@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="err_api_issue">Failed to get data from response</string>
+    <string name="err_internet">Internet is not available</string>
+    <string name="err_invalid">Please enter valid information</string>
+    <string name="loading">Loading</string>
+    <string name="cancel">Cancel</string>
+    <string name="err_invalid_field">Please enter valid value for \"%s\"</string>
+
+</resources>

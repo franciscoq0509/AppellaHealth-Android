@@ -1,0 +1,14 @@
+ext {
+    app = [
+            applicationId : "com.apella_health",
+            compileSdkVersion : 27,
+            minSdkVersion : 16,
+            targetSdkVersion : 27,
+            versionCode  : 3,
+            versionName  : "1.0.3"
+    ]
+}
+
+def static releaseTime() {
+    return new Date().format("yyyy.MM.dd.HH:mm", TimeZone.getTimeZone("IST"))
+}

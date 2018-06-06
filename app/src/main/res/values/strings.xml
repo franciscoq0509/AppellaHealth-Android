@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">Appella Health</string>
+
+
+    <string name="hint_workEmail">Work Email</string>
+    <string name="hint_password">Password</string>
+
+    <string name="btn_logIn">Log In</string>
+    <string name="hlink_newUser">New User?</string>
+    <string name="hlink_forgotYourPassword">Forgot Your Password?</string>
+
+    <string name="title_register">Register</string>
+
+    <string name="hint_firstName">First Name</string>
+    <string name="hint_lastName">Last Name</string>
+    <string name="btn_register">Register</string>
+
+    <string name="lbl_noWorkEmail">Don\'t Have a Work Email?</string>
+    <string name="hlink_callSupport">Call %s for Assistance</string>
+
+    <string name="title_forgotPassword">Forgot Password</string>
+    <string name="btn_submit">Submit</string>
+
+    <string name="section_news">News</string>
+    <string name="section_nursing">Nursing</string>
+    <string name="section_hr">Human Resources</string>
+    <string name="section_it">Information Technology</string>
+    <string name="section_events">Events</string>
+    <string name="section_gallery">Photo Gallery</string>
+    <string name="section_dining">Dining</string>
+    <string name="section_helpdesk">Help Desk</string>
+    <string name="section_account">Account</string>
+    <string name="section_company">@string/app_name</string>
+
+    <string name="lbl_more">MORE</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="lbl_account">ACCOUNT</string>
+    <string name="lbl_logout">Log Out</string>
+    <string name="lbl_settings">SETTINGS</string>
+    <string name="lbl_notifications">Enable Notifications</string>
+    <string name="lbl_support">SUPPORT</string>
+    <string name="lbl_policy">Privacy Policy</string>
+
+
+    <string name="title_policy">Privacy Policy</string>
+    <string name="title_share_image">Share Image</string>
+
+
+</resources>

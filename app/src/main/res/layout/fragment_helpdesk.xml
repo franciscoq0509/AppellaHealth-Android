@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+>
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+    >
+
+        <ImageView android:layout_width="match_parent" android:layout_height="match_parent"
+                   android:adjustViewBounds="true"
+                   android:scaleType="centerCrop"
+                   android:src="@drawable/bg_helpdesk"
+        />
+
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_alignParentBottom="true"
+                      android:orientation="vertical"
+                      android:padding="@dimen/dp_20"
+        >
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_marginBottom="@dimen/dp_20"
+                          android:gravity="center"
+                          android:orientation="horizontal"
+            >
+                <android.support.v7.widget.AppCompatImageView android:id="@+id/ivNursing"
+                                                              android:layout_width="@dimen/dp_80"
+                                                              android:layout_height="wrap_content"
+                                                              android:layout_marginRight="@dimen/dp_20"
+                                                              android:adjustViewBounds="true"
+                                                              app:srcCompat="@drawable/ic_nursing"
+                                                              app:tint="@color/sel_white_pressed"
+                />
+                <android.support.v7.widget.AppCompatImageView android:id="@+id/ivFacilities"
+                                                              android:layout_width="@dimen/dp_80"
+                                                              android:layout_height="wrap_content"
+                                                              android:adjustViewBounds="true"
+                                                              app:srcCompat="@drawable/ic_facilities"
+                                                              app:tint="@color/sel_white_pressed"
+                />
+
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:gravity="center"
+                          android:orientation="horizontal"
+            >
+                <android.support.v7.widget.AppCompatImageView android:id="@+id/ivHR"
+                                                              android:layout_width="@dimen/dp_80"
+                                                              android:layout_height="wrap_content"
+                                                              android:layout_marginRight="@dimen/dp_20"
+                                                              android:adjustViewBounds="true"
+                                                              app:srcCompat="@drawable/ic_human_resource"
+                                                              app:tint="@color/sel_white_pressed"
+                />
+                <android.support.v7.widget.AppCompatImageView android:id="@+id/ivIT"
+                                                              android:layout_width="@dimen/dp_80"
+                                                              android:layout_height="wrap_content"
+                                                              android:adjustViewBounds="true"
+                                                              app:srcCompat="@drawable/ic_it"
+                                                              app:tint="@color/sel_white_pressed"
+                />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</layout>

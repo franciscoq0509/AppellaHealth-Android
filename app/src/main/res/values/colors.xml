@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+  <color name="colorPrimary">@color/black</color>
+  <color name="colorPrimaryDark">@color/black</color>
+  <color name="colorAccent">@color/theme</color>
+
+  <color name="theme">#63a7fc</color>
+  <color name="theme_dark">#4e69aa</color>
+
+  <color name="black">#000000</color>
+  <color name="white">#ffffff</color>
+  <color name="blurr_gray">#FF333333</color>
+
+
+  <color name="transparent">#00000000</color>
+  <color name="yellow">#FFFF00</color>
+  <color name="mustard">#ffdb57</color>
+  <color name="darkblue">#020890</color>
+  <color name="copper">#b07d38</color>
+  <color name="mediumelectricblue">#005990</color>
+  <color name="straw">#e5d171</color>
+  <color name="mediumelectricblue_1">#02578a</color>
+  <color name="unitednationsblue">#58afe4</color>
+  <color name="cornflower">#9cccea</color>
+  <color name="spirodiscoball">#13c2ff</color>
+  <color name="manatee">#979797</color>
+  <color name="harvestgold">#dda300</color>
+  <color name="munsell">#f2f2f2</color>
+  <color name="byzantium">#762473</color>
+  <color name="bubblegum">#ffcbcb</color>
+  <color name="celadon">#baf9af</color>
+  <color name="bisque">#ffe4cb</color>
+  <color name="electriclavender">#f9cbff</color>
+  <color name="deepmagenta">#dd00c4</color>
+  <color name="lapislazuli">#235c7b</color>
+  <color name="rossocorsa">#dd0000</color>
+  <color name="limegreen">#36c81c</color>
+  <color name="sunsetorange">#ff5959</color>
+  <color name="ashgrey">#b8b8b8</color>
+  <color name="timberwolf">#d8d8d8</color>
+  <color name="lightskyblue">#94cefc</color>
+  <color name="coralpink">#ff7373</color>
+  <color name="unitednationsblue_1">#48bbff</color>
+  <color name="sandybrown">#fba86a</color>
+  <color name="deepskyblue">#00dbff</color>
+  <color name="lightkhaki">#e8f47d</color>
+  <color name="pastelgreen">#80cc7e</color>
+  <color name="shadow">#917464</color>
+  <color name="caputmortuum">#612a2a</color>
+  <color name="neoncarrot">#ff9648</color>
+  <color name="plum">#e4abdf</color>
+  <color name="babyblueeyes">#9ea4ff</color>
+  <color name="darkcyan">#069a83</color>
+  <color name="platinum">#e6e6e6</color>
+  <color name="snow">#fbfbfb</color>
+  <color name="pastelgreen_1">#69e455</color>
+  <color name="lapislazuli_1">#3b6498</color>
+  <color name="battleshipgrey">#838383</color>
+  <color name="unitednationsblue_2">#3cc7ff</color>
+  <color name="frenchblue">#0272bc</color>
+  <color name="deepskyblue_1">#00aff5</color>
+  <color name="timberwolf_1">#d9d9d9</color>
+  <color name="platinum_1">#dae1ea</color>
+  <color name="taupegray">#8f8f8f</color>
+  <color name="paleaqua">#c8d9df</color>
+  <color name="coralpink_1">#fd6c6c</color>
+  <color name="inchworm">#b0e16e</color>
+  <color name="redorange">#f94f4f</color>
+  <color name="darktangerine">#fdb219</color>
+  <color name="parisgreen">#52ee86</color>
+  <color name="glitter">#E5F0F9</color>
+  <color name="blackishblue">#4d729f</color>
+
+  <color name="grayfade">#0fc0c0c0</color>
+
+  <color name="orange">#E87E0C</color>
+  <color name="red">#FF0000</color>
+
+  <color name="yellow_dark">#e6a83f</color>
+  <color name="blue_dark">#4083d8</color>
+  <color name="gray">#cdcdcd</color>
+  <color name="gray_light">#e6e6e6</color>
+  <color name="gray_dark">#737574</color>
+  <color name="white_light">#80ffffff</color>
+  <color name="black_light">#30000000</color>
+
+
+
+
+
+
+
+
+
+
+</resources>
+

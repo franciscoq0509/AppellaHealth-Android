@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.app.appellahealth">
+
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <meta-data android:name="com.onesignal.NotificationOpened.DEFAULT" android:value="ENABLE" />
+
+
+    <application
+        android:allowBackup="true"
+        android:name=".commons.AppDelegate"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activities.LoginActivity"
+                  android:screenOrientation="portrait"
+        >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.RegistrationActivity"
+        android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".activities.ForgotPasswordActivity"
+                  android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".activities.HomeActivity"
+                  android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".activities.PrivacyActivity"
+                  android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".activities.ArticleDetailsActivity"
+                  android:launchMode="singleTop"
+                  android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".activities.GalleryActivity"
+                  android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".activities.GalleryDetailsActivity"
+                  android:screenOrientation="portrait">
+        </activity>
+
+
+        <service
+            android:name=".services.CustomExtenderService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.onesignal.NotificationExtender" />
+            </intent-filter>
+        </service>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths_shared" />
+        </provider>
+
+    </application>
+
+</manifest>

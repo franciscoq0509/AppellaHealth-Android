@@ -1,0 +1,112 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion rootProject.ext.app.compileSdkVersion
+    defaultConfig {
+        applicationId rootProject.ext.app.applicationId
+        minSdkVersion rootProject.ext.app.minSdkVersion
+        targetSdkVersion rootProject.ext.app.targetSdkVersion
+        versionCode rootProject.ext.app.versionCode
+        versionName rootProject.ext.app.versionName
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        manifestPlaceholders = [
+                onesignal_app_id: 'ef094d29-eaaa-45e0-819f-7a5adfb69c78',
+                // Project number pulled from dashboard, local value is ignored.
+                onesignal_google_project_number: 'REMOTE'
+        ]
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            applicationIdSuffix ""
+            debuggable true
+        }
+    }
+    dataBinding {
+        enabled = true
+    }
+
+    flavorDimensions "tier"
+    productFlavors {
+
+
+        dev {
+            applicationIdSuffix ""
+            versionNameSuffix "-dev"
+            buildConfigField 'String', 'BASE_URL', '"https://transpara.org/api/mobile/"'
+            buildConfigField 'String', 'CONTACT_SUPPORT', '"301-555-5556"'
+            buildConfigField 'String', 'CONTACT_HELPDESK', '"301-229-1540"'
+            buildConfigField 'boolean', 'BYPASS_LOGIN', 'true'
+            buildConfigField 'String', 'ACCESS_TOKEN', '"97e5b2d2d296288042a35c633cdc835cbeaff292"'
+            resValue 'string', 'USERNAME', 'test@getnada.com'
+            resValue 'string', 'PASSWORD', 'Test@123'
+            dimension "tier"
+        }
+
+        staging {
+            applicationIdSuffix ""
+            versionNameSuffix "-staging"
+            buildConfigField 'String', 'BASE_URL', '"https://transpara.org/api/mobile/"'
+            buildConfigField 'String', 'CONTACT_SUPPORT', '"301-555-5556"'
+            buildConfigField 'String', 'CONTACT_HELPDESK', '"301-229-1540"'
+            buildConfigField 'boolean', 'BYPASS_LOGIN', 'false'
+            buildConfigField 'String', 'ACCESS_TOKEN', '""'
+            resValue 'string', 'USERNAME', ''
+            resValue 'string', 'PASSWORD', ''
+            dimension "tier"
+        }
+
+
+        pro {
+            applicationIdSuffix ""
+            versionNameSuffix "-pro"
+            buildConfigField 'String', 'BASE_URL', '"https://transpara.org/api/mobile/"'
+            buildConfigField 'String', 'CONTACT_SUPPORT', '"301-555-5556"'
+            buildConfigField 'String', 'CONTACT_HELPDESK', '"301-229-1540"'
+            buildConfigField 'boolean', 'BYPASS_LOGIN', 'false'
+            buildConfigField 'String', 'ACCESS_TOKEN', '""'
+            resValue 'string', 'USERNAME', ''
+            resValue 'string', 'PASSWORD', ''
+            dimension "tier"
+        }
+
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:support-v4:27.0.2'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    implementation 'com.android.support:appcompat-v7:27.0.2'
+    implementation 'com.android.support:design:27.0.2'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.google.code.gson:gson:2.7'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.squareup.retrofit2:retrofit:2.3.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.3.0'
+    compile 'com.squareup.okhttp3:okhttp:3.10.0'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.10.0'
+    compile 'com.onesignal:OneSignal:[3.8.3, 3.99.99]'
+    compile 'com.google.firebase:firebase-core:15.0.0'
+}
+
+buildscript {
+    repositories {
+        maven { url 'https://plugins.gradle.org/m2/'}
+    }
+    dependencies {
+        classpath 'gradle.plugin.com.onesignal:onesignal-gradle-plugin:0.8.1'
+    }
+}
+apply plugin: 'com.onesignal.androidsdk.onesignal-gradle-plugin'
+apply plugin: 'com.google.gms.google-services'
+
+repositories {
+    maven { url 'https://maven.google.com' }
+}

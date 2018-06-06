@@ -1,0 +1,81 @@
+{
+  "project_info": {
+    "project_number": "322463641310",
+    "firebase_url": "https://appellahealth.firebaseio.com",
+    "project_id": "appellahealth",
+    "storage_bucket": "appellahealth.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:322463641310:android:f2fd08bbe2b37348",
+        "android_client_info": {
+          "package_name": "com.apella_health"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "322463641310-0dl55027tvpd40isursfh5el0agojqmh.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "322463641310-0dl55027tvpd40isursfh5el0agojqmh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAAtKwJGEixOXWVluNIHbOjKW-mkB3QLyI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:322463641310:android:ba09d22f72f61f8b",
+        "android_client_info": {
+          "package_name": "com.app.appellahealth"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "322463641310-0dl55027tvpd40isursfh5el0agojqmh.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "322463641310-0dl55027tvpd40isursfh5el0agojqmh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAAtKwJGEixOXWVluNIHbOjKW-mkB3QLyI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
